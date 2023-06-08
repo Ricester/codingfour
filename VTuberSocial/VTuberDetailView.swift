@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+// View to display all the information about a user and the events that have created.
 struct VTuberDetailView: View {
     
+    // The data to display on this view.
     var detail: VTuberStats
     
     var body: some View {

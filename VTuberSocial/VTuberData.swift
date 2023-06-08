@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+// Mock struct to represent an event that can be displayed.
 struct StreamEventData : Identifiable {
     let id = UUID()
     let timestampText: String
@@ -16,6 +16,7 @@ struct StreamEventData : Identifiable {
     let iconName: String
 }
 
+// Mock struct to represent the rank of a user.
 struct RankingData {
     let rank: Int
     let sevenDay: Int
@@ -23,6 +24,7 @@ struct RankingData {
     let allTime: Int
 }
 
+// Mock struct to hold all of the information about a user.
 struct VTuberStats : Identifiable {
     let id = UUID()
     let imageName: String
@@ -38,6 +40,7 @@ struct VTuberStats : Identifiable {
 }
 
 struct VTuberStatsList {
+    // Mock data used to test displays for the app.
     static var topTen = [
         VTuberStats(
             imageName: "exmaple",

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// Convet a number of hours to a displayable string.
+// This adjusts the unit based on the size increasing up to years.
 func hoursToDisplay(hours: Int) -> String {
     if (hours > 8760) {
         let years = hours / 8760
@@ -19,8 +21,11 @@ func hoursToDisplay(hours: Int) -> String {
     return String(format: "%dH", hours)
 }
 
+// This view shows the rank and stream time of VTubers over different time scales
+// We use a custom font to ensure the different elements are visually distinct
 struct RankingView: View {
     
+    // The RankingData that should be displayed by this view.
     var detail: RankingData
     
     var body: some View {

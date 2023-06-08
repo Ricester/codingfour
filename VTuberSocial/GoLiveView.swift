@@ -7,7 +7,10 @@
 
 import SwiftUI
 
+// A view to enable you to go live with a message.
+// This view is currently unfinished :(
 struct GoLiveView: View {
+    // The message that you wish to go live with
     @State private var message: String = "";
     @State private var selection: Int? = nil;
     

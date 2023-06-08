@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// Shows a list of StreamEventData in a scrollable list.
+// This is reused in different parts of the app.
 struct EventDetailView: View {
     
     let details: [StreamEventData]

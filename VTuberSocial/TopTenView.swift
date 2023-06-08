@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+
+// A view contains the top ten VTubers and there ranking.
+// Clicking on any of the rankings takes you to the VTubers details page.
 struct TopTenView: View {
     
     let details: [VTuberStats]

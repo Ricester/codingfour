@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// The main View which creates all the tab content and icons.
 struct ContentView: View {
     var body: some View {
         TabView {
